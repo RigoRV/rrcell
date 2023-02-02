@@ -148,6 +148,7 @@ main{
 .productosDestacados h3{
     font-style: oblique;
     color: white;
+    font-size: 20px;
 }
 
 h2{
@@ -162,7 +163,7 @@ h2{
 
 .productosDestacados .productosDiv div{
     width: 230px;
-    height: 280px;
+    height: 300px;
     margin: 30px;
     text-align: center;
     border: 5px solid rgb(55, 221, 55);
@@ -196,6 +197,7 @@ h2{
 .marcas h3{
     margin-bottom: 10px;
     font-style: oblique;
+    color: white;
 }
 .marcas h2{
     text-align: center;
