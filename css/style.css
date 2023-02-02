@@ -1079,13 +1079,6 @@ height: 250px;
         font-size: 15px;
         text-align: center;
     }
-    .productosDestacados{
-        background-image: url(../img/fotobien.jfif);
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 30vh;
-    }
     .descripcion{
         height: 110vh;
     }
