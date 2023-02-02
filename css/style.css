@@ -97,6 +97,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 30px;
 }
 
 .descripcion div{
@@ -108,8 +109,8 @@ main{
     flex-direction: column;
     align-items: center;
     border: 10px solid rgb(55, 221, 55);
-    padding: 30px;
     font-style: oblique;
+    padding: 30px;
 }
 .descripcion div a{
     text-decoration: none;
@@ -712,6 +713,8 @@ height: 250px;
 }
 
 /****media query*****/
+
+
 @media screen and (max-width:1250px){
     .galeriaSamsung{
         background-image: url(../img/z4flippubli.webp);
@@ -770,12 +773,11 @@ height: 250px;
         width: 100%;
     }
     .descripcion{
-        background-image: url(../img/imagendestacados.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 50vh;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
     }
+
     .hero h2{
         font-size: 60px;
     }
@@ -783,10 +785,7 @@ height: 250px;
         font-size: 30px;
         text-align: center;
     }
-    .descripcion{
-        flex-direction: column;
-        height: 30vh;
-    }   
+
     .descripcion p{
         font-size: 20px;
     }
@@ -826,6 +825,7 @@ height: 250px;
 }
 
 
+
 @media screen and (max-width:700px){
     .hero{
         background: linear-gradient(rgb(60, 60, 116), rgba(55, 221, 55, 0)), url("../img/fondo2.jpg");
@@ -834,18 +834,8 @@ height: 250px;
         height: 50vh;
         width: 100%;
     }
-    .descripcion{
-        background-image: url(../img/imagendestacados.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 40vh;
-    }
 
-    .descripcion{
-        flex-direction: column;
-        height: 30vh;
-        padding: 10px;
-    }
+
     .descripcion h2{
         padding: 10px;
         display: flex;
@@ -868,10 +858,11 @@ height: 250px;
         background-position: center;
         height: 20vh;
         width: 100%;
-}
+    }
     .galeriaSamsung h2{
         font-size: 30px;
     }
+}
 
 
 @media screen and (max-width:620px){
@@ -884,9 +875,17 @@ height: 250px;
     header h1{
         font-size: 60px;
     }
+    .descripcion{
+        height: 50vh;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:580px){
+    .descripcion{
+        height: 50vh;
+        width: 100%;
+    }
     .telefonosSam div{
         margin: 10px;
     }
@@ -910,9 +909,7 @@ height: 250px;
     .hero p{
         font-size: 20px;
     }
-    .descripcion{
-        height: 40vh;
-    }
+
 
     .descripcion h2{
         padding: 10px;
@@ -954,6 +951,9 @@ height: 250px;
     .telefonosSam div{
         margin: 10px;
     }
+    .descripcion{
+        height: 40vh;
+    }
 }
 
 
@@ -970,13 +970,6 @@ height: 250px;
         font-size: 15px;
     }
 
-    .descripcion{
-        background-image: url(../img/imagendestacados.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 70vh;
-        width: 100%;
-    }
     .descripcion div{
         border: 5px solid rgb(55, 221, 55);
     }
@@ -1002,7 +995,6 @@ height: 250px;
         font-size: 15px;
         text-align: center;
     }
-}
     .productosDestacados{
         background-image: url(../img/fotobien.jfif);
         background-size: cover;
@@ -1011,12 +1003,11 @@ height: 250px;
         height: auto;
     }
     .descripcion{
-        height: 30vh;
+        width: 100%;
+        height: 50vh;
     }
-    }
+}
 
-    @media screen and (max-width:360px){
-        .descripcion{
-            height: 35vh;
-        }
-    }
+
+
+    
