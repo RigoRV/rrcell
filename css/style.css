@@ -52,7 +52,7 @@ main{
 .hero {
     color: white;
     text-align: center;
-    background-image: url("../img/fondo2.jpg");
+    background: linear-gradient(rgb(60, 60, 116), rgba(55, 221, 55, 0)), url("../img/fondo2.jpg");
     width: 100%;
     height: 80vh;
     background-position: center;
@@ -130,6 +130,12 @@ main{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+.productosDiv div{
+    transition: 2s;
+}
+.productosDiv div:hover{
+    transform: scale(1.2);
 }
 .productosDestacados a{
     text-decoration: none;
@@ -271,6 +277,12 @@ footer .redes{
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 20px;
+}
+.telefonosSam div{
+    transition: 1.5s;
+}
+.telefonosSam div:hover{
+    transform: scale(1.2);
 }
 
 .productosSamsung .telefonosSam div{
@@ -719,6 +731,9 @@ height: 250px;
     .galeriaSamsung h2{
         font-size: 50px;
     }
+    .telefonosSam div{
+        margin: 10px;
+    }
 }
 
 @media screen and (max-width:1000px){
@@ -732,8 +747,28 @@ height: 250px;
         height: 150px;
         margin: 20px;
     }
+    .telefonosSam div{
+        margin: 10px;
+    }
     }
 @media screen and (max-width:900px){
+    .telefonosSam div{
+        margin: 10px;
+    }
+    .hero{
+        background: linear-gradient(rgb(60, 60, 116), rgba(55, 221, 55, 0)), url("../img/fondo2.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        width: 100%;
+    }
+    .descripcion{
+        background-image: url(../img/imagendestacados.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        width: 100%;
+    }
     .hero h2{
         font-size: 60px;
     }
@@ -743,7 +778,7 @@ height: 250px;
     }
     .descripcion{
         flex-direction: column;
-        height: 50vh;
+        height: 30vh;
     }   
     .descripcion p{
         font-size: 20px;
@@ -785,9 +820,23 @@ height: 250px;
 
 
 @media screen and (max-width:700px){
+    .hero{
+        background: linear-gradient(rgb(60, 60, 116), rgba(55, 221, 55, 0)), url("../img/fondo2.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        width: 100%;
+    }
+    .descripcion{
+        background-image: url(../img/imagendestacados.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+    }
+
     .descripcion{
         flex-direction: column;
-        height: 70vh;
+        height: 30vh;
         padding: 10px;
     }
     .descripcion h2{
@@ -797,9 +846,15 @@ height: 250px;
         justify-content: center;
         height: 20vh;
     }
+    .telefonosSam div{
+        margin: 10px;
+    }
 
 }
 @media screen and (max-width:650px){
+    .telefonosSam div{
+        margin: 10px;
+    }
     .galeriaSamsung{
         background-image: url(../img/z4flippubli.webp);
         background-size: cover;
@@ -825,6 +880,16 @@ height: 250px;
 }
 
 @media screen and (max-width:580px){
+    .telefonosSam div{
+        margin: 10px;
+    }
+    .hero{
+        background: linear-gradient(rgb(60, 60, 116), rgba(55, 221, 55, 0)), url("../img/fondo2.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+        width: 100%;
+    }
     footer{
         font-size: 20px;
     }
@@ -837,6 +902,9 @@ height: 250px;
     }
     .hero p{
         font-size: 20px;
+    }
+    .descripcion{
+        height: 40vh;
     }
 
     .descripcion h2{
@@ -876,15 +944,18 @@ height: 250px;
     .articulos h2{
         font-size: 30px;
     }
+    .telefonosSam div{
+        margin: 10px;
+    }
 }
 
 
 @media screen and (max-width:400px){
     .hero{
-        background-image: url("../img/fondo2.jpg");
+        background: linear-gradient(rgb(60, 60, 116), rgba(55, 221, 55, 0)), url("../img/fondo2.jpg");
         background-size: cover;
         background-position: center;
-        height: 50vh;
+        height: 30vh;
         width: 100%;
     }
 
@@ -932,5 +1003,13 @@ height: 250px;
         width: 100%;
         height: auto;
     }
+    .descripcion{
+        height: 30vh;
+    }
+    }
 
+    @media screen and (max-width:360px){
+        .descripcion{
+            height: 35vh;
+        }
     }
