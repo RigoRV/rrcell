@@ -723,6 +723,9 @@ height: 250px;
         height: 50vh;
         width: 100%;
     }
+    .descripcion{
+        height: 80vh;
+    }
 }
 
 
@@ -730,6 +733,19 @@ height: 250px;
     header{
         flex-direction: column;
         align-items: center;
+        height: 35vh;
+    }
+    header h1{
+        font-size: 60px;
+    }
+    header img{
+        padding: 10px;
+    }
+    header ul{
+        font-size: 16px;
+    }
+    header ul li{
+        margin: 0px;
     }
     .galeriaSamsung{
         background-image: url(../img/z4flippubli.webp);
@@ -744,9 +760,27 @@ height: 250px;
     .telefonosSam div{
         margin: 10px;
     }
+    .descripcion{
+        height: 60vh;
+    }
+    .descripcion h2{
+        font-size: 30px;
+    }
+    .descripcion div p{
+        font-size: 20px;
+    }
+    .descripcion div a{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:1000px){
+    .hero h2{
+        font-size: 60px;
+    }
+    .hero p{
+        font-size: 30px;
+    }
     footer{
         flex-direction: column;
         align-items: center;
@@ -775,7 +809,7 @@ height: 250px;
     .descripcion{
         display: flex;
         flex-direction: column;
-        height: 40vh;
+        height: 70vh;
     }
 
     .hero h2{
@@ -823,6 +857,11 @@ height: 250px;
         font-size: 40px;
     }
 }
+@media screen and (max-width:750px){
+    .descripcion{
+        height: 75vh;
+    }
+}
 
 
 
@@ -841,14 +880,20 @@ height: 250px;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 20vh;
+        height: 70vh;
     }
     .telefonosSam div{
         margin: 10px;
     }
 
 }
-@media screen and (max-width:650px){
+@media screen and (max-width:670px){
+    header{
+        height: 40vh;
+    }
+    header h1{
+        font-size: 60px;
+    }
     .telefonosSam div{
         margin: 10px;
     }
@@ -862,6 +907,9 @@ height: 250px;
     .galeriaSamsung h2{
         font-size: 30px;
     }
+    .descripcion{
+        height: 80vh;
+    }
 }
 
 
@@ -872,19 +920,49 @@ height: 250px;
     header nav ul li{
         margin: 5px;
     }
-    header h1{
-        font-size: 60px;
+    .hero h2{
+        font-size: 40px;
+    }
+    .hero p{
+        font-size: 20px;
     }
     .descripcion{
-        height: 50vh;
+        height: 80vh;
         width: 100%;
+    }
+    .descripcion h2{
+        font-size: 20px;
+    }
+    header{
+        height: 50vh;
+    }
+    header h1{
+        font-size: 30px;
+    }
+    header ul{
+        font-size: 10px;
+    }
+    .marcas h2{
+        font-size: 20px;
+    }
+    .productosDestacados h2{
+        font-size: 20px;
+    }
+    footer{
+        font-size: 20px;
     }
 }
 
 @media screen and (max-width:580px){
     .descripcion{
-        height: 50vh;
+        height: 90vh;
         width: 100%;
+    }
+    .descripcion{
+        padding: 10px;
+    }
+    .descripcion div{
+        border: 2px solid rgb(55, 221, 55);
     }
     .telefonosSam div{
         margin: 10px;
@@ -896,6 +974,7 @@ height: 250px;
         height: 40vh;
         width: 100%;
     }
+
     footer{
         font-size: 20px;
     }
@@ -934,7 +1013,7 @@ height: 250px;
 
 @media screen and (max-width:450px){
     .descripcion h2{
-        font-size: 30px;
+        font-size: 20px;
     }
     .descripcion p{
         font-size: 15px;
@@ -945,17 +1024,25 @@ height: 250px;
     .galeriaSamsung h2{
         font-size: 20px;
     }
-    .articulos h2{
-        font-size: 30px;
-    }
     .telefonosSam div{
         margin: 10px;
     }
     .descripcion{
-        height: 40vh;
+        height: 90vh;
+    }
+    .productosDestacados h2{
+        font-size: 20px;
+    }
+    .marcas h2{
+        font-size: 20px;
     }
 }
+@media screen and (max-width:430px){
+    .descripcion{
+        height: 100vh;
+    }
 
+}
 
 @media screen and (max-width:400px){
     .hero{
@@ -970,9 +1057,6 @@ height: 250px;
         font-size: 15px;
     }
 
-    .descripcion div{
-        border: 5px solid rgb(55, 221, 55);
-    }
     footer{
         font-size: 20px;
         text-align: center;
@@ -1000,14 +1084,15 @@ height: 250px;
         background-size: cover;
         background-position: center;
         width: 100%;
-        height: auto;
+        height: 30vh;
     }
     .descripcion{
-        width: 100%;
-        height: 50vh;
+        height: 110vh;
     }
 }
 
-
-
-    
+@media screen and (max-width:360px){
+    .descripcion{
+        height: 120vh;
+    }
+}
