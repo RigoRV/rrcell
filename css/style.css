@@ -523,6 +523,11 @@ h2{
 }
 
 /*-------accesorios html--------*/
+.carru div img{
+    height: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+}
 .accesorioshtml{
     background-color: black;
 }
