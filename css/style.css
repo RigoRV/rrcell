@@ -11,8 +11,8 @@ body{
 }
 /*------header------*/
 header img{
-    width: 110px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
     display: flex;
     text-align: left;
     padding: 20px;
@@ -431,6 +431,7 @@ h2{
     font-size: 40px;
     font-style: oblique;
     padding: 10px;
+    margin: 20px;
 }
 
 .htmlIphone{
@@ -492,15 +493,15 @@ h2{
     object-fit: cover;
 }
 
-.grilla2{
+.apple2{
     grid-column: span 2;
 }
 
-.grilla5{
+.apple5{
     grid-row: span 2;
 }
 
-.grilla6{
+.apple6{
     grid-column: span 2;
 }
 
@@ -553,7 +554,7 @@ h2{
 
 .accesorios .acce{
     font-style: oblique;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 500;
 }
 
@@ -733,7 +734,7 @@ height: 250px;
     header{
         flex-direction: column;
         align-items: center;
-        height: 35vh;
+        height: 45vh;
     }
     header h1{
         font-size: 60px;
@@ -772,6 +773,12 @@ height: 250px;
     .descripcion div a{
         font-size: 20px;
     }
+    .productosIphone div{
+        margin: 10px;
+    }
+    .uneteIphone h2{
+        font-size: 50px;
+    }
 }
 
 @media screen and (max-width:1000px){
@@ -794,8 +801,23 @@ height: 250px;
     .telefonosSam div{
         margin: 10px;
     }
+    .display h2{
+        font-size: 30px;
     }
+    .bandas h2{
+        font-size: 30px;
+    }
+    .pin h2{
+        font-size: 30px;
+    }
+    .contacto h2{
+        font-size: 30px;
+    }
+}
 @media screen and (max-width:900px){
+    header{
+        position: relative;
+    }
     .telefonosSam div{
         margin: 10px;
     }
@@ -856,10 +878,66 @@ height: 250px;
     .galeriaSamsung h2{
         font-size: 40px;
     }
+    .grilla{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 200px;
+        gap: 20px;
+    }
+    .grillaA{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .accesorios .acce{
+        font-size: 40px;
+    }
+    .spigen h2{
+        font-size: 30px;
+    }
+    .cargadores h2{
+        font-size: 30px;
+    }
+    .display{
+        flex-direction: column;
+    }
+    .bandas{
+        flex-direction: column-reverse;
+    }
+    .pin{
+        flex-direction: column;
+    }
+    .tecnico h2{
+        font-size: 30px;
+    }
+    .datos{
+        flex-direction: column;
+        height: 70vh;
+    }
+    .contacto .datos h2{
+        margin: 10px;
+    }
 }
 @media screen and (max-width:750px){
     .descripcion{
         height: 75vh;
+    }
+    .contacto .portadaRegistro{
+        flex-direction: column;
+    }
+    .contacto h2{
+        font-size: 20px;
+    }
+    .contacto .consultas{
+        flex-direction: column;
+    }
+    .contacto .pais{
+        background-image: url(../img/banderas.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .contacto .consultas{
+        background-image: url(../img/contacto2.webp);
+        background-position: center;
     }
 }
 
@@ -885,11 +963,23 @@ height: 250px;
     .telefonosSam div{
         margin: 10px;
     }
+    .tecnico .display img{
+        height: 350px;
+        width: 350px;
+    }
+    .tecnico .bandas img{
+        height: 350px;
+        width: 350px;
+    }
+    .tecnico .pin img{
+        height: 350px;
+        width: 350px;
+    }
 
 }
 @media screen and (max-width:670px){
     header{
-        height: 40vh;
+        height: 45vh;
     }
     header h1{
         font-size: 60px;
@@ -909,6 +999,24 @@ height: 250px;
     }
     .descripcion{
         height: 80vh;
+    }
+    .bienvenidaApple h2{
+        font-size: 30px;
+    }
+    .tarjetasApple h2{
+        font-size: 30px;
+    }
+    .uneteIphone{
+
+        padding: 10px;
+        background-image: url(../img/iphone14pro.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 40vh;
+    }
+    .uneteIphone h2{
+        font-size: 40px;
     }
 }
 
@@ -934,7 +1042,8 @@ height: 250px;
         font-size: 20px;
     }
     header{
-        height: 50vh;
+        height: 55vh;
+        position: relative;
     }
     header h1{
         font-size: 30px;
@@ -950,6 +1059,13 @@ height: 250px;
     }
     footer{
         font-size: 20px;
+    }
+    .tecnico h2{
+        font-size: 25px;
+    }
+    .bandas img{
+        height: 300px;
+        width: 350px;
     }
 }
 
@@ -1009,6 +1125,57 @@ height: 250px;
     .gridGaleria{
         grid-template-columns: repeat(1,1fr);
     }
+    .grilla{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .uneteIphone h2{
+        font-size: 30px;
+    }
+    .accesorios .acce{
+        font-size: 30px;
+    }
+    .cargadores .cables div{
+        margin: 10px;
+    }
+    .tecnico .display img{
+        height: 300px;
+        width: 300px;
+    }
+    .tecnico .bandas img{
+        height: 300px;
+        width: 300px;
+    }
+    .tecnico .pin img{
+        height: 300px;
+        width: 300px;
+    }
+    .tecnico h2{
+        font-size: 20px;
+    }
+    .consultaServicio .cajaServicio{
+        background-image: url(../img/serviciofondo.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 50vh;
+    }
+    .tecnico .display div{
+        margin: 10px;
+    }
+    .tecnico .display h2{
+        margin: 10px;
+    }
+    .tecnico .bandas div{
+        margin: 10px;
+    }
+    .tecnico .bandas h2{
+        margin: 10px;
+    }
+    .tecnico .pin div{
+        margin: 10px;
+    }
+    .tecnico .pin h2{
+        margin: 10px;
+    }
 }
 
 @media screen and (max-width:450px){
@@ -1035,6 +1202,30 @@ height: 250px;
     }
     .marcas h2{
         font-size: 20px;
+    }
+    .uneteIphone h2{
+        font-size: 20px;
+    }
+    .uneteIphone{
+
+        padding: 10px;
+        background-image: url(../img/iphone14pro.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 30vh;
+    }
+    .tecnico .display img{
+        height: 250px;
+        width: 250px;
+    }
+    .tecnico .bandas img{
+        height: 250px;
+        width: 250px;
+    }
+    .tecnico .pin img{
+        height: 250px;
+        width: 250px;
     }
 }
 @media screen and (max-width:430px){
