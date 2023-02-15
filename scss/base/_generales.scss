@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Anybody', cursive;
+}
+.accesoRapido{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+.accesoRapido img{
+    width: 50px;
+    height: 50px;
+}

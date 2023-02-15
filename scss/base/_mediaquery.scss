@@ -1,0 +1,660 @@
+@media screen and (max-width:1250px){
+    .galeriaSamsung{
+        background-image: url(../img/z4flippubli.webp);
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        width: 100%;
+    } 
+    .descripcion{
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width:1050px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        height: 45vh;
+        img{
+            padding: 10px;
+        }
+        h1{
+            font-size: 60px;
+        }
+        nav{
+            ul{
+                font-size: 16px;
+                li{
+                    margin: 0px;
+                }
+            }
+        }
+    }
+    .galeriaSamsung{
+        background-image: url(../img/z4flippubli.webp);
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+        width: 100%;
+        h2{
+            font-size: 50px;
+        }
+    }
+    .productosSamsung{
+        .telefonosSam{
+            div{
+                margin: 10px; 
+            }
+        }
+    }
+    .descripcion{
+        height: 60vh;
+        h2{
+            font-size: 30px;
+        }
+        div{
+            p{
+                font-size: 20px;
+            }
+            a{
+                font-size: 20px;
+            }
+        }
+    }
+    .productosIphone{
+        div{
+            margin: 10px;
+        }
+    }
+    .uneteIphone{
+        h2{
+            font-size: 50px;
+        }
+    }
+}
+
+    @media screen and (max-width:1000px){
+        .hero{
+        h2{
+            font-size: 60px;
+        }
+        p{
+        font-size: 30px;
+        }
+    }
+    .productosSamsung{
+        .telefonosSam{
+            div{
+                margin: 10px;
+            }
+        }
+    }
+    .display{
+        div{
+            h2{
+                font-size: 30px;
+            }
+        }
+    }
+    .bandas{
+        div{
+            h2{
+                font-size: 30px;
+            }
+        }
+    }
+    .pin{
+        div{
+            h2{
+                font-size: 30px;
+            }
+        }
+    }
+    .contacto{
+        h2{
+            font-size: 30px;
+        }
+    }
+    footer{
+        img{
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+        }
+    }
+}
+    @media screen and (max-width:900px){
+        header{
+        position: relative;
+    }
+    .productosSamsung{
+        .telefonosSam{
+            div{
+                margin: 10px;
+            }
+        }
+    }
+    .hero{
+        background: linear-gradient(rgb(60, 60, 116), rgba(55, 221, 55, 0)), url("../img/fondo2.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        width: 100%;
+        h2{
+            font-size: 60px;
+        }
+        p{
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+    .descripcion{
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        h2{
+            font-size: 30px;
+            margin: 0px;
+        }
+        div{
+            margin: 20px;
+            padding: 30px;
+            border: 5px solid rgb(55, 221, 55);
+            p{
+                font-size: 20px;
+            }
+            a{
+                font-size: 20px;
+                margin: 10px;
+            }
+        }
+    }
+    .gridGaleria{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 200px;
+        gap: 20px;
+        .gridSam{
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    }
+    .galeriaSamsung{
+        h2{
+            font-size: 40px;
+        }
+    }
+    .grilla{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 200px;
+        gap: 20px;
+        .grillaA{
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    }
+    .accesorios{
+        .acce{
+            font-size: 40px;
+        }
+    }
+    .spigen{
+        h2{
+            font-size: 30px; 
+        }
+    }
+    .cargadores{
+        h2{
+            font-size: 30px;
+        }
+    }
+    .display{
+        flex-direction: column;
+    }
+    .bandas{
+        flex-direction: column-reverse;
+    }
+    .pin{
+        flex-direction: column;
+    }
+    .tecnico{
+        h2{
+            font-size: 30px; 
+        }
+    }
+    .datos{
+        flex-direction: column;
+        height: 70vh;
+        h2{
+            margin: 10px; 
+        }
+    }
+}
+@media screen and (max-width:750px){
+    .descripcion{
+        height: 75vh;
+    }
+    .contacto{
+        .portadaRegistro{
+            flex-direction: column;
+            h2{
+                font-size: 20px;  
+            }
+        }
+    }
+    .contacto{
+        h2{
+            font-size: 20px;
+        }
+    }
+    .contacto{
+        .consultas{
+            background-image: url(../img/contacto2.webp);
+            background-position: center;
+            flex-direction: column;
+        }
+    }
+    .contacto{
+        .pais{
+            background-image: url(../img/banderas.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    .hero{
+        background: linear-gradient(rgb(60, 60, 116), rgba(55, 221, 55, 0)), url("../img/fondo2.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        width: 100%;
+    }
+    .descripcion{
+        h2{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+        }
+    }
+    .productosSamsung{
+        .telefonosSam{
+            div{
+                margin: 10px;
+            }
+        }
+    }
+    .display{
+        img{
+            height: 350px;
+            width: 350px;
+        }
+    }
+    .bandas{
+        img{
+            height: 350px;
+            width: 350px;
+        }
+    }
+    .pin{
+        img{
+            height: 350px;
+            width: 350px;
+        }
+    }
+}
+@media screen and (max-width:670px){
+    .header{
+        height: 45vh;
+        h1{
+            font-size: 60px;
+        }
+    }
+    .productosSamsung{
+        .telefonosSam{
+            div{
+                margin: 10px;
+            }
+        }
+    }
+    .galeriaSamsung{
+        h2{
+            font-size: 30px;
+        }
+    }
+    .descripcion{
+        height: 80vh;
+    }
+    .bienvenidosApple{
+        h2{
+            font-size: 30px;
+        }
+    }
+    .tarjetasApple{
+        h2{
+            font-size: 30px;
+        }
+    }
+    .uneteIphone{
+        padding: 10px;
+        background-image: url(../img/iphone14pro.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 40vh;
+        h2{
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width:620px){
+    header{
+        height: 55vh;
+        position: relative;
+        h1{
+            font-size: 30px;
+        }
+        nav{
+            ul{
+                font-size: 10px;
+                flex-direction: column;
+                li{
+                    margin: 5px;
+                }
+            }
+        }
+    }
+    .hero{
+        h2{
+            font-size: 40px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .descripcion{
+        height: 80vh;
+        width: 100%;
+        h2{
+            font-size: 20px;
+        }
+    }
+    .productosDestacados{
+        h2{
+            font-size: 20px;
+        }
+    }
+    .marcas{
+        h2{
+            font-size: 20px;
+        }
+    }
+    .tecnico{
+        h2{
+            font-size: 25px;
+        }
+    }
+    .bandas{
+        img{
+            height: 300px;
+            width: 350px;
+        }
+    }
+    footer{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:580px){
+    .descripcion{
+        height: 90vh;
+        width: 100%;
+        padding: 10px;
+        h2{
+            padding: 10px;
+            font-size: 30px;
+        }
+        div{
+            font-size: 20px;
+            text-align: center;
+            border: 2px solid rgb(55, 221, 55)
+        }
+    }
+            
+    .hero{
+        background: linear-gradient(rgb(60, 60, 116), rgba(55, 221, 55, 0)), url("../img/fondo2.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+        width: 100%;
+        h2{
+            font-size: 40px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .productosDestacados{
+        h2{
+            font-size: 30px;
+        }
+    }
+    .marcas{
+        h2{
+            font-size: 30px;
+        }
+    }
+    .productosSamsung{
+        .telefonosSam{
+            margin: 10px;
+        }
+    }
+    .gridGaleria{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .grilla{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .uneteIphone{
+        h2{
+            font-size: 30px;
+        }
+    }
+    .accesorios{
+        .acce{
+            font-size: 30px;
+        }
+    }
+    .cargadpres{
+        .cables{
+            div{
+                margin: 10px;
+            }
+        }
+    }
+    .tecnico{
+        h2{
+            font-size: 20px;
+        }
+    }
+    .display{
+        img{
+            height: 300px;
+            width: 300px;
+        }
+        div{
+            margin: 10px;
+            h2{
+                margin: 10px;
+            }
+        }
+    }
+    .bandas{
+        img{
+            height: 300px;
+            width: 300px;
+        }
+        div{
+            margin: 10px;
+            h2{
+                margin: 10px;
+            }
+        }
+    }
+    .pin{
+        img{
+            height: 300px;
+            width: 300px;
+        }
+        div{
+            margin: 10px;
+            h2{
+                margin: 10px;
+            }
+        }
+    }
+    .consultaServicio{
+        .cajaServicio{
+            background-image: url(../img/serviciofondo.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 50vh;
+        }
+    }
+}
+@media screen and (max-width:450px){
+    .descripcion{
+        height: 90vh;
+        h2{
+            font-size: 20px; 
+        }
+        div{
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+    .productosDestacados{
+        h2{
+            font-size: 20px;
+        }
+    }
+    .marcas{
+        h2{
+            font-size: 20px;
+        }
+    }
+    .productosSamsung{
+        h2{
+            font-size: 20px;
+        }
+    }
+    .galeriaSamsung{
+        h2{
+            font-size: 20px;
+        }
+    }
+    .productosSamsung{
+        .telefonosSam{
+            div{
+                margin: 10px;
+            }
+        }
+    }
+    .uneteIphone{
+        padding: 10px;
+        background-image: url(../img/iphone14pro.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 30vh;
+        h2{
+            font-size: 20px;
+        }
+    }
+    .display{
+        img{
+            height: 250px;
+            width: 250px;
+        }
+    }
+    .bandas{
+        img{
+            height: 250px;
+            width: 250px;
+        }
+    }
+    .pin{
+        img{
+            height: 250px;
+            width: 250px;
+        }
+    }
+}
+@media screen and (max-width:430px){
+    .descripcion{
+        height: 100vh;
+    }
+}
+@media screen and (max-width:400px){
+    header{
+        h1{
+            font-size: 30px;
+        }
+        nav{
+            ul{
+                font-size: 10px;
+            }
+        }
+    }
+    .hero{
+        background: linear-gradient(rgb(60, 60, 116), rgba(55, 221, 55, 0)), url("../img/fondo2.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+        width: 100%;
+        p{
+            font-size: 15px;
+        }
+    }
+    .descripcion{
+        height: 110vh;
+        h2{
+            font-size: 20px;
+        }
+        div{
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+    footer{
+        font-size: 20px;
+        text-align: center;
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+@media screen and (max-width:360px){
+    .descripcion{
+        height: 120vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

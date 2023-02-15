@@ -1,0 +1,637 @@
+/*----index-----*/
+.hero{
+    color: white;
+    text-align: center;
+    background: linear-gradient(rgb(60, 60, 116), rgba(55, 221, 55, 0)), url("../img/fondo2.jpg");
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2{
+        font-style: italic;
+        font-size: 80px;
+        font-weight: 100px;
+    }
+    p{
+        font-style: italic;
+        font-size: 40px;
+    }
+}
+.descripcion{
+    background-image: url(../img/imagendestacados.jpg);
+    font-size: 40px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    div{
+        color: white;
+        display: flex;
+        font-size: 30px;
+        margin: 30px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: 10px solid rgb(55, 221, 55);
+        font-style: oblique;
+        padding: 30px;
+        a{
+            text-decoration: none;
+            color: rgb(3, 3, 75);
+            background-color: rgb(55, 221, 55);
+            font-weight: bolder;
+        }
+    }
+}
+
+.productosDestacados{
+    background-image: url(../img/fotobien.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2{
+        text-align: center;
+        font-style: oblique;
+        font-size: 40px;
+        padding: 10px;
+        color: $color-verde;
+    }
+    .productosDiv{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        div{
+            width: 230px;
+            height: 300px;
+            margin: 30px;
+            text-align: center;
+            border: 5px solid rgb(55, 221, 55);
+            background-color: rgb(3, 3, 75);
+            transition: 2s;
+            &:hover{
+                transform: scale(1.2);
+            }
+            img{
+                width: 100%;
+                height: 230px;
+            }
+            h3{
+                font-style: oblique;
+                color: white;
+                font-size: 20px;
+            }
+            a{
+                text-decoration: none;
+                color: rgb(3, 3, 75);
+                background-color: rgb(55, 221, 55);
+                font-weight: bolder ;
+                padding: 3px;
+            }
+        }
+    }
+}
+.marcas{
+    h2{
+        text-align: center;
+        font-style: oblique;
+        font-size: 40px;
+        padding: 10px;
+    }
+    .contenedorMarcas{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        div{
+            width: 230px;
+            height: 280px;
+            margin: 30px;
+            text-align: center;
+            border: 5px solid rgb(55, 221, 55);
+            background-color: rgb(3, 3, 75);
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            h3{
+                margin-bottom: 10px;
+                font-style: oblique;
+                color: white;
+            }
+            a{
+                text-decoration: none;
+                color: rgb(3, 3, 75);
+                background-color: rgb(55, 221, 55);
+                font-weight: bolder ;
+                padding: 5px 10px;
+            }
+        }
+    }
+}
+
+/*-----Samsung html------*/
+.htmlSamsung{
+    background-color: black;
+}
+
+.articulos{
+    h2{
+        text-align: center;
+        font-size: 40px;
+        font-style: oblique;
+        padding: 10px;
+    }
+}
+.productosSamsung{
+    text-align: center;
+    padding: 20px;
+    .telefonosSam{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 20px;
+        div{
+            border: 5px solid rgb(55, 221, 55);
+            background-color: rgb(3, 3, 75);
+            transition: 1.5s;
+            &:hover{
+                transform: scale(1.2);
+            }
+            img{
+                height: 230px;
+                width: 230px;
+                margin: 10px;
+            }
+            h3{
+                color: white;
+                margin: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: rgb(3, 3, 75);
+                background-color: rgb(55, 221, 55);
+                font-weight: bolder ;
+                padding: 5px 5px;
+            }
+        }
+    }
+}
+.gridGaleria{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 300px;
+    gap: 20px;
+    .gridSam{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 10px 10px 79px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 79px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 79px 0px rgba(0,0,0,0.75);
+        }
+    }
+}
+.img4{
+    grid-column: span 2;
+}
+.img5{
+    grid-row: span 2;
+}
+.img6{
+    grid-column: span 2;
+}
+
+.galeriaSamsung{
+    background-image: url(../img/z4flippubli.webp);
+    width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2{
+        font-size: 70px;
+        font-style: oblique;
+        color: rgb(55, 221, 55);
+        text-align: left;
+        padding: 20px;
+    }
+}
+
+/*---------iphone htm-----*/
+.htmlIphone{
+    background-color: black;
+}
+.bienvenidosApple{
+    h2{
+        text-align: center;
+        font-size: 40px;
+        font-style: oblique;
+        padding: 10px;
+        margin: 20px;
+    }
+}
+
+.tarjetasApple{
+    h2{
+    text-align: center;
+    font-size: 40px;
+    font-style: oblique;
+    padding: 10px;
+    margin: 20px;
+    }
+    .productosIphone{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 20px;
+        div{
+            border: 5px solid rgb(55, 221, 55);
+            background-color: rgb(3, 3, 75);
+            text-align: center;
+            display: flex;
+            justify-content: space-around;    
+            align-items: center;
+            flex-direction: column;
+            img{
+                height: 230px;
+                width: 230px;
+                margin: 10px;
+            }
+            h3{
+                color: white;
+                margin: 10px;
+            }
+            .tarjetas{
+                width: 40px;
+                height: 40px;
+                display: flex;
+            }
+            a{
+                text-decoration: none;
+                color: rgb(3, 3, 75);
+                background-color: rgb(55, 221, 55);
+                font-weight: bolder ;
+                padding: 5px 5px;
+            }
+        }
+    }
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 300px;
+    gap: 20px;
+    div{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.apple2{
+    grid-column: span 2;
+}
+
+.apple5{
+    grid-row: span 2;
+}
+
+.apple6{
+    grid-column: span 2;
+}
+
+
+.uneteIphone{
+    padding: 10px;
+    background-image: url(../img/iphone14pro.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    h2{
+        font-size: 70px;
+        font-style: oblique;
+        color: rgb(55, 221, 55);
+        text-align: left;
+        padding: 20px;
+    }
+}
+
+/*----Accesorios Html------*/
+.accesorioshtml{
+    background-color: black;
+}
+.carru{
+    div{
+        img{
+            height: 500px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.accesorios{
+    background-image: url(../img/accesorioshtml.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .acce{
+        font-style: oblique;
+        font-size: 60px;
+        font-weight: 500;
+    }
+}
+
+.spigen{
+    h2{
+        text-align: center;
+        font-size: 40px;
+        font-style: oblique;
+        padding: 10px;
+        margin: 20px;
+    }
+    .funda{
+        display: flex;
+        justify-content: space-around;    
+        align-items: center;
+        flex-wrap: wrap;
+        div{
+            border: 5px solid rgb(55, 221, 55);
+            background-color: rgb(3, 3, 75);
+            color: white;
+            text-align: center;
+            margin: 10px;
+            img{
+                width: 250px;
+                height: 250px;
+            }
+            h3{
+                margin: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: rgb(3, 3, 75);
+                background-color: rgb(55, 221, 55);
+                font-weight: bolder ;
+                padding: 5px;
+            }
+            form{
+                margin: 10px;
+                color: white;
+            }
+        }
+    }
+}
+
+.cargadores{
+    h2{
+        text-align: center;
+        font-size: 40px;
+        font-style: oblique;
+        padding: 10px;
+        margin: 20px;
+    }
+    .cables{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        flex-wrap: wrap;
+        div{
+            border: 5px solid rgb(55, 221, 55);
+            background-color: rgb(3, 3, 75);
+            color: white;
+            text-align: center;
+            img{
+                width: 260px;
+                height: 260px;
+            }
+            h3{
+                margin: 10px;
+            }
+            select{
+                margin: 10px;
+            }
+        }
+    }
+}
+
+/*-----servicio tecnico html---------*/
+.tecnico{
+    background-color: black;
+    color: white;
+    h2{
+        text-align: center;
+        font-size: 40px;
+        font-style: oblique;
+        padding: 10px;
+        margin: 20px;
+    }
+}
+.display{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    img{
+        width: 500px;
+        height: 400px;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        h2{
+            text-align: center;
+            font-size: 40px;
+            font-style: oblique;
+            padding: 10px;
+            margin: 20px;
+        }
+        p{
+            text-align: center;
+        }
+    }
+}
+
+.bandas{
+    display: flex;
+    align-items: center;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        h2{
+            text-align: center;
+            font-size: 40px;
+            font-style: oblique;
+            padding: 10px;
+            margin: 20px;
+        }
+        p{
+            text-align: center;
+        }
+    }
+    img{
+        width: 500px;
+        height: 400px;
+    }
+}
+
+.pin{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    img{
+        width: 500px;
+        height: 400px;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        h2{
+            text-align: center;
+            font-size: 40px;
+            font-style: oblique;
+            padding: 10px;
+            margin: 20px;
+        }
+        p{
+            margin: 10px;
+            text-align: center;
+        }
+    }
+}
+
+.consultaServicio{
+    .cajaServicio{
+        background-image: url(../img/serviciofondo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h2{
+            text-align: center;
+            font-size: 40px;
+            font-style: oblique;
+            padding: 10px;
+            margin: 20px;
+        }
+    }
+}
+
+/*------contacto html-----*/
+.contacto{
+    background-color: black;
+}
+
+.portadaRegistro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 30%;
+        height: 40vh;
+    }
+    h2{
+        text-align: center;
+        font-style: oblique;
+        font-size: 40px;
+        padding: 10px;
+    }
+}
+
+.datos{
+    color: white;
+    background-image: url(../img/consulta1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: rgb(68, 8, 68);
+    h2{
+        text-align: center;
+        font-style: oblique;
+        font-size: 40px;
+        padding: 10px;
+    }
+}
+.pais{
+    background-color: rgb(3, 3, 75);
+    color: white;
+    background-image: url(../img/banderas.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 40vh;
+    width: 100%;
+    div{
+        h2{
+            text-align: left; 
+        }
+    }
+}
+
+.consultas{
+    background-color: rgb(12, 63, 12);
+    background-image: url(../img/contacto2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        flex-direction: column;
+        h2{
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
