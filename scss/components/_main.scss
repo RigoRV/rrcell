@@ -34,6 +34,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 30px;
+    h2{
+        color: $color-verde;
+    }
     div{
         color: white;
         display: flex;
@@ -100,11 +103,13 @@
     }
 }
 .marcas{
+    background-color: $color-fondos;
     h2{
         text-align: center;
         font-style: oblique;
         font-size: 40px;
         padding: 10px;
+        color: $color-verde;
     }
     .contenedorMarcas{
         display: flex;
@@ -144,6 +149,7 @@
 
 .articulos{
     h2{
+        color: $color-verde;
         text-align: center;
         font-size: 40px;
         font-style: oblique;
@@ -153,6 +159,13 @@
 .productosSamsung{
     text-align: center;
     padding: 20px;
+    h2{
+        color: $color-verde;
+        text-align: center;
+        font-size: 40px;
+        font-style: oblique;
+        padding: 10px;
+    }
     .telefonosSam{
         display: flex;
         justify-content: space-around;
@@ -229,13 +242,15 @@
 .htmlIphone{
     background-color: black;
 }
-.bienvenidosApple{
+
+.bienvenidaApple{
     h2{
         text-align: center;
         font-size: 40px;
         font-style: oblique;
         padding: 10px;
         margin: 20px;
+        color: $color-verde;
     }
 }
 
@@ -246,6 +261,7 @@
     font-style: oblique;
     padding: 10px;
     margin: 20px;
+    color: $color-verde;
     }
     .productosIphone{
         display: flex;
@@ -358,6 +374,8 @@
         font-style: oblique;
         font-size: 60px;
         font-weight: 500;
+        color: $color-verde;
+        text-align: center;
     }
 }
 
@@ -368,6 +386,7 @@
         font-style: oblique;
         padding: 10px;
         margin: 20px;
+        color: $color-verde;
     }
     .funda{
         display: flex;
@@ -409,6 +428,7 @@
         font-style: oblique;
         padding: 10px;
         margin: 20px;
+        color: $color-verde;
     }
     .cables{
         display: flex;
@@ -445,6 +465,7 @@
         font-style: oblique;
         padding: 10px;
         margin: 20px;
+        color: $color-verde;
     }
 }
 .display{
@@ -565,6 +586,7 @@
         font-style: oblique;
         font-size: 40px;
         padding: 10px;
+        color: $color-verde;
     }
 }
 
@@ -585,6 +607,7 @@
         font-style: oblique;
         font-size: 40px;
         padding: 10px;
+        color: $color-verde;
     }
 }
 .pais{
@@ -599,6 +622,7 @@
     div{
         h2{
             text-align: left; 
+            color: $color-verde;
         }
     }
 }
@@ -620,6 +644,7 @@
         flex-direction: column;
         h2{
             text-align: center;
+            color: $color-verde;
         }
     }
 }

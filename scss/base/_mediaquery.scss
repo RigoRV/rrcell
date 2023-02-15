@@ -72,8 +72,17 @@
             font-size: 50px;
         }
     }
+    footer{
+        ul{
+            text-align: center;
+        }
+        .redes{
+            h3{
+                text-align: center;
+            }
+        }
+    }
 }
-
     @media screen and (max-width:1000px){
         .hero{
         h2{
@@ -117,15 +126,31 @@
         }
     }
     footer{
-        img{
-            width: 150px;
-            height: 150px;
-            margin: 20px;
+        flex-direction: column;
+        align-items: center;
+        font-size: 30px;
+        ul{
+            font-size: 20px;
+        }
+        .redes{
+            h3{
+                text-align: center;
+                font-size: 20px;
+            }
+            div{
+                a{
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        margin: 20px;
+                    }
+                }
+            }
         }
     }
 }
-    @media screen and (max-width:900px){
-        header{
+@media screen and (max-width:900px){
+    header{
         position: relative;
     }
     .productosSamsung{
@@ -261,6 +286,16 @@
             background-image: url(../img/banderas.jpg);
             background-size: cover;
             background-position: center;
+        }
+    }
+    .articulos{
+        h2{
+            font-size: 30px;
+        }
+    }
+    .productosSamsung{
+        h2{
+            font-size: 30px;
         }
     }
 }
@@ -457,6 +492,11 @@
     .gridGaleria{
         grid-template-columns: repeat(1,1fr);
     }
+    .bienvenidaApple{
+        h2{
+            font-size: 30px;
+        }
+    }
     .grilla{
         grid-template-columns: repeat(1,1fr);
     }
@@ -549,6 +589,11 @@
             font-size: 20px;
         }
     }
+    .articulos{
+        h2{
+            font-size: 20px;
+        }
+    }
     .productosSamsung{
         h2{
             font-size: 20px;
@@ -600,6 +645,16 @@
     .descripcion{
         height: 100vh;
     }
+    .bienvenidaApple{
+        h2{
+            font-size: 20px;
+        }
+    }
+    .tarjetasApple{
+        h2{
+            font-size: 20px;
+        }
+    }
 }
 @media screen and (max-width:400px){
     header{
@@ -639,8 +694,12 @@
             width: 100px;
             height: 100px;
         }
+        ul{
+            font-size: 15px;
+        }
     }
 }
+
 @media screen and (max-width:360px){
     .descripcion{
         height: 120vh;
