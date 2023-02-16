@@ -2,9 +2,7 @@ header{
     background-color: rgb(3, 3, 75);
     position: sticky;
     top: 0%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    @include flexbox(flex, space-between, flex-end);
     img{
         width: 150px;
         height: 150px;

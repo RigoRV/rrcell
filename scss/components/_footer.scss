@@ -1,22 +1,18 @@
 footer{
-    background-color: rgb(3, 3, 75);
+    background-color: $color-azul;
     display: flex;
     justify-content: space-between;
     ul{
-        display: flex;
+        @include flexbox(flex, center, center);
         flex-direction: column;
-        justify-content: center;
-        align-items: center; 
         li{
             color: white;
             list-style: none;
         }
     }
     .redes{
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        color: $color-textos;
+        @include flexbox(flex, center, center);
         flex-direction: column;
         div{
             a{

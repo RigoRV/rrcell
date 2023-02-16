@@ -2,3 +2,41 @@ $color-verde:rgb(55, 221, 55);
 $color-azul:rgb(3, 3, 75);
 $color-fondos:black;
 $color-textos:white;
+
+/*---listas---*/
+$font-size:
+16px,
+20px,
+30px,
+40px,
+60px;
+/*-----mapas----*/
+
+$cajas:(
+    border-cajas: 5px solid rgb(55, 221, 55),
+    background-cajas: rgb(3, 3, 75),
+);
+/*----extends---*/
+
+%flex{
+    display: flex;
+    align-items: center;
+}
+
+%spacearound{
+    display: flex;
+    justify-content: space-around;
+}
+
+%fondos{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*----mixin----*/
+@mixin flexbox ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

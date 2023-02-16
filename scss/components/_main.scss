@@ -1,6 +1,5 @@
 /*----index-----*/
 .hero{
-    color: white;
     text-align: center;
     background: linear-gradient(rgb(60, 60, 116), rgba(55, 221, 55, 0)), url("../img/fondo2.jpg");
     width: 100%;
@@ -9,18 +8,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
+    @include flexbox (flex, center, center);
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     h2{
         font-style: italic;
         font-size: 80px;
         font-weight: 100px;
+        color: $color-verde;
     }
     p{
         font-style: italic;
         font-size: 40px;
+        color: $color-textos;
     }
 }
 .descripcion{
@@ -30,28 +29,24 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexbox(flex, space-between, center);
     padding: 30px;
     h2{
         color: $color-verde;
     }
     div{
         color: white;
-        display: flex;
+        @include flexbox (flex, center, center);
         font-size: 30px;
         margin: 30px;
-        justify-content: center;
         flex-direction: column;
-        align-items: center;
         border: 10px solid rgb(55, 221, 55);
         font-style: oblique;
         padding: 30px;
         a{
             text-decoration: none;
-            color: rgb(3, 3, 75);
-            background-color: rgb(55, 221, 55);
+            color: $color-azul;
+            background-color: $color-verde;
             font-weight: bolder;
         }
     }
@@ -64,21 +59,20 @@
     h2{
         text-align: center;
         font-style: oblique;
-        font-size: 40px;
+        font-size: nth($font-size, 4 );
         padding: 10px;
         color: $color-verde;
     }
     .productosDiv{
-        display: flex;
-        justify-content: space-around;
+        @extend %spacearound;
         flex-wrap: wrap;
         div{
             width: 230px;
             height: 300px;
             margin: 30px;
             text-align: center;
-            border: 5px solid rgb(55, 221, 55);
-            background-color: rgb(3, 3, 75);
+            border: map-get($cajas, border-cajas);
+            background-color: map-get($cajas, background-cajas);
             transition: 2s;
             &:hover{
                 transform: scale(1.2);
@@ -90,11 +84,11 @@
             h3{
                 font-style: oblique;
                 color: white;
-                font-size: 20px;
+                font-size: nth($font-size, 2 );
             }
             a{
                 text-decoration: none;
-                color: rgb(3, 3, 75);
+                color: $color-azul;
                 background-color: rgb(55, 221, 55);
                 font-weight: bolder ;
                 padding: 3px;
@@ -112,16 +106,15 @@
         color: $color-verde;
     }
     .contenedorMarcas{
-        display: flex;
-        justify-content: space-around;
+        @extend %spacearound;
         flex-wrap: wrap;
         div{
             width: 230px;
             height: 280px;
             margin: 30px;
             text-align: center;
-            border: 5px solid rgb(55, 221, 55);
-            background-color: rgb(3, 3, 75);
+            border: map-get($cajas, border-cajas);
+            background-color: map-get($cajas, background-cajas);
             img{
                 width: 200px;
                 height: 200px;
@@ -129,7 +122,7 @@
             h3{
                 margin-bottom: 10px;
                 font-style: oblique;
-                color: white;
+                color: $color-textos;
             }
             a{
                 text-decoration: none;
@@ -144,7 +137,7 @@
 
 /*-----Samsung html------*/
 .htmlSamsung{
-    background-color: black;
+    background-color: $color-fondos;
 }
 
 .articulos{
@@ -167,13 +160,12 @@
         padding: 10px;
     }
     .telefonosSam{
-        display: flex;
-        justify-content: space-around;
+        @extend %spacearound;
         flex-wrap: wrap;
         margin: 20px;
         div{
-            border: 5px solid rgb(55, 221, 55);
-            background-color: rgb(3, 3, 75);
+            border: map-get($cajas, border-cajas);
+            background-color: map-get($cajas, background-cajas);
             transition: 1.5s;
             &:hover{
                 transform: scale(1.2);
@@ -184,7 +176,7 @@
                 margin: 10px;
             }
             h3{
-                color: white;
+                color: $color-textos;
                 margin: 10px;
             }
             a{
@@ -232,7 +224,7 @@
     h2{
         font-size: 70px;
         font-style: oblique;
-        color: rgb(55, 221, 55);
+        color: $color-verde;
         text-align: left;
         padding: 20px;
     }
@@ -240,7 +232,7 @@
 
 /*---------iphone htm-----*/
 .htmlIphone{
-    background-color: black;
+    background-color: $color-fondos;
 }
 
 .bienvenidaApple{
@@ -264,18 +256,19 @@
     color: $color-verde;
     }
     .productosIphone{
-        display: flex;
-        justify-content: space-around;
+        @extend %spacearound;
         flex-wrap: wrap;
         margin: 20px;
         div{
-            border: 5px solid rgb(55, 221, 55);
-            background-color: rgb(3, 3, 75);
+            border: map-get($cajas, border-cajas);
+            background-color: map-get($cajas, background-cajas);
             text-align: center;
-            display: flex;
-            justify-content: space-around;    
-            align-items: center;
+            @include flexbox (flex, center, center);
             flex-direction: column;
+            transition: 1.5s;
+            &:hover{
+                transform: scale(1.2);
+                }
             img{
                 height: 230px;
                 width: 230px;
@@ -331,16 +324,14 @@
 .uneteIphone{
     padding: 10px;
     background-image: url(../img/iphone14pro.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
+    @extend %fondos;
     width: 100%;
     height: 70vh;
     h2{
         font-size: 70px;
         font-style: oblique;
-        color: rgb(55, 221, 55);
+        color: $color-verde;
         text-align: left;
         padding: 20px;
     }
@@ -348,7 +339,7 @@
 
 /*----Accesorios Html------*/
 .accesorioshtml{
-    background-color: black;
+    background-color: $color-fondos;
 }
 .carru{
     div{
@@ -367,9 +358,7 @@
     width: 100%;
     height: 60vh;
     padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox (flex, center, center);
     .acce{
         font-style: oblique;
         font-size: 60px;
@@ -389,14 +378,12 @@
         color: $color-verde;
     }
     .funda{
-        display: flex;
-        justify-content: space-around;    
-        align-items: center;
+        @include flexbox (flex, space-around, center);
         flex-wrap: wrap;
         div{
-            border: 5px solid rgb(55, 221, 55);
-            background-color: rgb(3, 3, 75);
-            color: white;
+            border: map-get($cajas, border-cajas);
+            background-color: map-get($cajas, background-cajas);
+            color: $color-textos;
             text-align: center;
             margin: 10px;
             img{
@@ -424,22 +411,20 @@
 .cargadores{
     h2{
         text-align: center;
-        font-size: 40px;
+        font-size: nth($font-size , 4 );
         font-style: oblique;
         padding: 10px;
         margin: 20px;
         color: $color-verde;
     }
     .cables{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include flexbox (flex, space-around, center);
         padding: 20px;
         flex-wrap: wrap;
         div{
-            border: 5px solid rgb(55, 221, 55);
-            background-color: rgb(3, 3, 75);
-            color: white;
+            border: map-get($cajas, border-cajas);
+            background-color: map-get($cajas, background-cajas);
+            color: $color-textos;
             text-align: center;
             img{
                 width: 260px;
@@ -457,7 +442,7 @@
 
 /*-----servicio tecnico html---------*/
 .tecnico{
-    background-color: black;
+    background-color: $color-fondos;
     color: white;
     h2{
         text-align: center;
@@ -469,17 +454,15 @@
     }
 }
 .display{
-    display: flex;
-    align-items: center;
+    @extend %flex;
     padding: 20px;
     img{
         width: 500px;
         height: 400px;
     }
     div{
-        display: flex;
+        @extend %flex;
         flex-direction: column;
-        align-items: center;
         margin: 20px;
         h2{
             text-align: center;
@@ -495,12 +478,10 @@
 }
 
 .bandas{
-    display: flex;
-    align-items: center;
+    @extend %flex;
     div{
-        display: flex;
+        @extend %flex;
         flex-direction: column;
-        align-items: center;
         margin: 20px;
         h2{
             text-align: center;
@@ -520,8 +501,7 @@
 }
 
 .pin{
-    display: flex;
-    align-items: center;
+    @extend %flex;
     margin: 20px;
     padding: 20px;
     img{
@@ -529,9 +509,8 @@
         height: 400px;
     }
     div{
-        display: flex;
+        @extend %flex;
         flex-direction: column;
-        align-items: center;
         margin: 20px;
         h2{
             text-align: center;
@@ -554,9 +533,7 @@
         background-size: cover;
         width: 100%;
         height: 60vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexbox (flex, center, center);
         flex-direction: column;
         h2{
             text-align: center;
@@ -570,13 +547,11 @@
 
 /*------contacto html-----*/
 .contacto{
-    background-color: black;
+    background-color: $color-fondos;
 }
 
 .portadaRegistro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox (flex, center, center);
     img{
         width: 30%;
         height: 40vh;
@@ -598,9 +573,7 @@
     height: 40vh;
     width: 100%;
     margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    @include flexbox (flex, space-between, baseline);
     background-color: rgb(68, 8, 68);
     h2{
         text-align: center;
@@ -633,14 +606,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    display: flex;
-    justify-content: space-around;
+    @extend %spacearound;
     padding: 30px;
     div{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        color: white;
+        @include flexbox (flex, space-around, center);
+        color: $color-textos;
         flex-direction: column;
         h2{
             text-align: center;

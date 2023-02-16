@@ -16,6 +16,23 @@ body {
   width: 50px;
   height: 50px; }
 
+/*---listas---*/
+/*-----mapas----*/
+/*----extends---*/
+.display, .display div, .bandas, .bandas div, .pin, .pin div {
+  display: flex;
+  align-items: center; }
+
+.productosDestacados .productosDiv, .marcas .contenedorMarcas, .productosSamsung .telefonosSam, .tarjetasApple .productosIphone, .consultas {
+  display: flex;
+  justify-content: space-around; }
+
+.uneteIphone {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/*----mixin----*/
 header {
   background-color: #03034b;
   position: sticky;
@@ -45,7 +62,6 @@ header {
 
 /*----index-----*/
 .hero {
-  color: white;
   text-align: center;
   background: linear-gradient(#3c3c74, rgba(55, 221, 55, 0)), url("../img/fondo2.jpg");
   width: 100%;
@@ -55,16 +71,18 @@ header {
   background-size: cover;
   background-attachment: fixed;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: center; }
+  flex-direction: column; }
   .hero h2 {
     font-style: italic;
     font-size: 80px;
-    font-weight: 100px; }
+    font-weight: 100px;
+    color: #37dd37; }
   .hero p {
     font-style: italic;
-    font-size: 40px; }
+    font-size: 40px;
+    color: white; }
 
 .descripcion {
   background-image: url(../img/imagendestacados.jpg);
@@ -74,19 +92,19 @@ header {
   background-repeat: no-repeat;
   height: 70vh;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 30px; }
   .descripcion h2 {
     color: #37dd37; }
   .descripcion div {
     color: white;
     display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
     margin: 30px;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
     border: 10px solid #37dd37;
     font-style: oblique;
     padding: 30px; }
@@ -107,8 +125,6 @@ header {
     padding: 10px;
     color: #37dd37; }
   .productosDestacados .productosDiv {
-    display: flex;
-    justify-content: space-around;
     flex-wrap: wrap; }
     .productosDestacados .productosDiv div {
       width: 230px;
@@ -143,8 +159,6 @@ header {
     padding: 10px;
     color: #37dd37; }
   .marcas .contenedorMarcas {
-    display: flex;
-    justify-content: space-around;
     flex-wrap: wrap; }
     .marcas .contenedorMarcas div {
       width: 230px;
@@ -188,8 +202,6 @@ header {
     font-style: oblique;
     padding: 10px; }
   .productosSamsung .telefonosSam {
-    display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     margin: 20px; }
     .productosSamsung .telefonosSam div {
@@ -268,8 +280,6 @@ header {
   color: #37dd37; }
 
 .tarjetasApple .productosIphone {
-  display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   margin: 20px; }
   .tarjetasApple .productosIphone div {
@@ -277,9 +287,12 @@ header {
     background-color: #03034b;
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    transition: 1.5s; }
+    .tarjetasApple .productosIphone div:hover {
+      transform: scale(1.2); }
     .tarjetasApple .productosIphone div img {
       height: 230px;
       width: 230px;
@@ -320,9 +333,6 @@ header {
 .uneteIphone {
   padding: 10px;
   background-image: url(../img/iphone14pro.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   width: 100%;
   height: 70vh; }
@@ -433,16 +443,12 @@ header {
     color: #37dd37; }
 
 .display {
-  display: flex;
-  align-items: center;
   padding: 20px; }
   .display img {
     width: 500px;
     height: 400px; }
   .display div {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 20px; }
     .display div h2 {
       text-align: center;
@@ -453,38 +459,30 @@ header {
     .display div p {
       text-align: center; }
 
-.bandas {
-  display: flex;
-  align-items: center; }
-  .bandas div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.bandas div {
+  flex-direction: column;
+  margin: 20px; }
+  .bandas div h2 {
+    text-align: center;
+    font-size: 40px;
+    font-style: oblique;
+    padding: 10px;
     margin: 20px; }
-    .bandas div h2 {
-      text-align: center;
-      font-size: 40px;
-      font-style: oblique;
-      padding: 10px;
-      margin: 20px; }
-    .bandas div p {
-      text-align: center; }
-  .bandas img {
-    width: 500px;
-    height: 400px; }
+  .bandas div p {
+    text-align: center; }
+
+.bandas img {
+  width: 500px;
+  height: 400px; }
 
 .pin {
-  display: flex;
-  align-items: center;
   margin: 20px;
   padding: 20px; }
   .pin img {
     width: 500px;
     height: 400px; }
   .pin div {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 20px; }
     .pin div h2 {
       text-align: center;
@@ -569,8 +567,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  display: flex;
-  justify-content: space-around;
   padding: 30px; }
   .consultas div {
     display: flex;
@@ -588,9 +584,9 @@ footer {
   justify-content: space-between; }
   footer ul {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column; }
     footer ul li {
       color: white;
       list-style: none; }
