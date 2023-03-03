@@ -353,7 +353,7 @@ header {
   margin-bottom: 20px; }
 
 .accesorios {
-  background-image: url(../img/accesorioshtml.jpeg);
+  background: linear-gradient(#0f0f0f, rgba(42, 23, 23, 0.636)), url(../img/accesorioshtml.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
