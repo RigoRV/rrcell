@@ -12,25 +12,6 @@
 }
 
 @media screen and (max-width:1050px){
-    header{
-        flex-direction: column;
-        align-items: center;
-        height: 45vh;
-        img{
-            padding: 10px;
-        }
-        h1{
-            font-size: 60px;
-        }
-        nav{
-            ul{
-                font-size: 16px;
-                li{
-                    margin: 0px;
-                }
-            }
-        }
-    }
     .galeriaSamsung{
         background-image: url(../img/z4flippubli.webp);
         background-size: cover;
@@ -344,12 +325,6 @@
     }
 }
 @media screen and (max-width:670px){
-    .header{
-        height: 45vh;
-        h1{
-            font-size: 60px;
-        }
-    }
     .productosSamsung{
         .telefonosSam{
             div{
@@ -389,22 +364,7 @@
 }
 
 @media screen and (max-width:620px){
-    header{
-        height: 55vh;
-        position: relative;
-        h1{
-            font-size: 30px;
-        }
-        nav{
-            ul{
-                font-size: 10px;
-                flex-direction: column;
-                li{
-                    margin: 5px;
-                }
-            }
-        }
-    }
+
     .hero{
         h2{
             font-size: 40px;
@@ -657,16 +617,6 @@
     }
 }
 @media screen and (max-width:400px){
-    header{
-        h1{
-            font-size: 30px;
-        }
-        nav{
-            ul{
-                font-size: 10px;
-            }
-        }
-    }
     .hero{
         background: linear-gradient(rgb(60, 60, 116), rgba(55, 221, 55, 0)), url("../img/fondo2.jpg");
         background-size: cover;

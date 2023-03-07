@@ -33,32 +33,19 @@ body {
   background-size: cover; }
 
 /*----mixin----*/
-header {
-  background-color: #03034b;
-  position: sticky;
-  top: 0%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end; }
-  header img {
-    width: 150px;
-    height: 150px;
-    display: flex;
-    text-align: left;
-    padding: 20px; }
-  header h1 {
-    font-style: oblique;
+header nav {
+  background-color: #03034b; }
+  header nav div h2 {
+    font-size: 80px;
     color: #37dd37;
-    font-size: 100px;
-    font-weight: 100px; }
-  header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center; }
-    header nav ul li a {
-      margin: 10px;
-      text-decoration: none;
-      color: white; }
+    margin-right: 20px; }
+  header nav div a img {
+    width: 130px;
+    height: 130px; }
+
+header nav .container-fluid div form button {
+  border: 3px solid #37dd37;
+  color: #37dd37; }
 
 /*----index-----*/
 .hero {
@@ -611,18 +598,6 @@ footer {
     height: 80vh; } }
 
 @media screen and (max-width: 1050px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    height: 45vh; }
-    header img {
-      padding: 10px; }
-    header h1 {
-      font-size: 60px; }
-    header nav ul {
-      font-size: 16px; }
-      header nav ul li {
-        margin: 0px; }
   .galeriaSamsung {
     background-image: url(../img/z4flippubli.webp);
     background-size: cover;
@@ -797,10 +772,6 @@ footer {
     width: 350px; } }
 
 @media screen and (max-width: 670px) {
-  .header {
-    height: 45vh; }
-    .header h1 {
-      font-size: 60px; }
   .productosSamsung .telefonosSam div {
     margin: 10px; }
   .galeriaSamsung h2 {
@@ -822,16 +793,6 @@ footer {
       font-size: 40px; } }
 
 @media screen and (max-width: 620px) {
-  header {
-    height: 55vh;
-    position: relative; }
-    header h1 {
-      font-size: 30px; }
-    header nav ul {
-      font-size: 10px;
-      flex-direction: column; }
-      header nav ul li {
-        margin: 5px; }
   .hero h2 {
     font-size: 40px; }
   .hero p {
@@ -969,10 +930,6 @@ footer {
     font-size: 20px; } }
 
 @media screen and (max-width: 400px) {
-  header h1 {
-    font-size: 30px; }
-  header nav ul {
-    font-size: 10px; }
   .hero {
     background: linear-gradient(#3c3c74, rgba(55, 221, 55, 0)), url("../img/fondo2.jpg");
     background-size: cover;

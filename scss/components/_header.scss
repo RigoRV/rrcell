@@ -1,35 +1,38 @@
 header{
-    background-color: rgb(3, 3, 75);
-    position: sticky;
-    top: 0%;
-    @include flexbox(flex, space-between, flex-end);
-    img{
-        width: 150px;
-        height: 150px;
-        display: flex;
-        text-align: left;
-        padding: 20px;
-    }
-    h1{
-        font-style: oblique;
-        color: rgb(55, 221, 55);
-        font-size: 100px;
-        font-weight: 100px;
-    }
     nav{
-        ul{
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            li{
-                a{
-                    margin: 10px;
-                    text-decoration: none;
-                    color: white;
+        background-color: $color-azul;
+        div{
+            h2{
+                font-size: 80px;
+                color: $color-verde;
+                margin-right: 20px;
+            }
+            a{
+                img{
+                    width: 130px;
+                    height: 130px;
+                } 
+            }
+        }
+    }
+}
+
+header{
+    nav{
+        .container-fluid{
+            div{
+                form{
+                    button{
+                        border: 3px solid $color-verde;
+                        color: $color-verde;
+                    }
                 }
             }
         }
     }
 }
+
+
+
 
 

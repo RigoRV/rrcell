@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--CSS-->
     <link rel="stylesheet" href="../css/estilos.css">
     <meta charset="UTF-8">
@@ -10,42 +14,86 @@
     <!---keywords-->
     <meta name="keywords" content="telefonos, galaxy, samsung, watch, buds, calidad, auriculares, fold, flip">
     <!----descripcion-->
-    <meta name="description" content="En RRcell encontraras gran variedad en productos samsung una de las mejores marcas en cuanto a calidad y durabilidad en todos sus productos, aqui encontratras las ultimas novedades de la marca coreana a los mejores precios del mercado.">
+    <meta name="description"
+        content="En RRcell encontraras gran variedad en productos samsung una de las mejores marcas en cuanto a calidad y durabilidad en todos sus productos, aqui encontratras las ultimas novedades de la marca coreana a los mejores precios del mercado.">
     <!----Opem graph-->
     <!--type-->
     <meta property="og:type" content="web site">
     <!--titulo-->
-    <meta property="og:title" content="Samsung | La mayor variedad y el mejor precio de productos samsung aqui en rrcell.">
+    <meta property="og:title"
+        content="Samsung | La mayor variedad y el mejor precio de productos samsung aqui en rrcell.">
     <!---url-->
     <meta property="og:url" content="https://rrcell.netlify.app/">
     <!---image-->
     <meta property="og:image" content="file:///C:/Users/rigob/Desktop/rrcell-ca/img/rrlogo.png">
     <!---descripcion-->
-    <meta property="og:description" content="En RRcell encontraras gran variedad en productos samsung una de las mejores marcas en cuanto a calidad y durabilidad en todos sus productos, aqui encontratras las ultimas novedades de la marca coreana a los mejores precios del mercado.">
+    <meta property="og:description"
+        content="En RRcell encontraras gran variedad en productos samsung una de las mejores marcas en cuanto a calidad y durabilidad en todos sus productos, aqui encontratras las ultimas novedades de la marca coreana a los mejores precios del mercado.">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <title>Samsung RRcell | Conoce lo mas actualizado en equipos y accesorios samsung.</title>
 </head>
+
 <body>
     <header>
-        <img src="../img/rrlogo.png" alt="logo">
-        <h1 class="animate__animated animate__fadeInLeft">RRcell</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="../pages/samsung.html">SAMSUNG</a></li>
-                <li><a href="../pages/iphone.html">IPHONE</a></li>
-                <li><a href="../pages/accesorios.html">ACCESORIOS</a></li>
-                <li><a href="../pages/serviciotecnico.html">SERVICIO TECNICO</a></li>
-                <li><a href="../pages/contacto.html">CONTACTO</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a href="../index.html"><img src="../img/rrlogo.png" alt="logo"></a>>
+                <h2>RRcell</h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-success" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="../pages/samsung.html">Samsung</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="../pages/iphone.html">Apple</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="../pages/accesorios.html">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="../pages/serviciotecnico.html">Servicio Tecnico</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Destacados
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-primary" href="../pages/samsung.html">Z4 Fold</a></li>
+                                <li><a class="dropdown-item text-primary" href="../pages/iphone.html">Iphone 14</a></li>
+                                <li><a class="dropdown-item text-primary" href="../pages/accesorios.html">Spigen</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
+
     </header>
     <main class="htmlSamsung">
         <div class="accesoRapido">
             <a href="https://www.instagram.com/" target="blank"> <img src="../img/instagramfixed.png" alt=""></a>
         </div>
         <section class="tituloSamsung">
-            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/hZN9-pn7cPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/hZN9-pn7cPM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </section>
         <section class="articulos">
             <h2>Bienvenido a Samsung una de las primeras marcas en articulos electronicos.</h2>
@@ -60,19 +108,19 @@
                     <h3>Samsung z4 Fold 256gb</h3>
                     <a href="./contacto.html">CONTACTANOS</a>
                 </div>
-                    
+
                 <div>
                     <img src="../img/z4flip.jfif" alt="z4flip">
                     <h3>Samsung z4 Flip 125gb</h3>
                     <a href="./contacto.html">CONTACTANOS</a>
                 </div>
-                    
+
                 <div>
                     <img src="../img/s22plus.jfif" alt="s22">
                     <h3>Samsung s22 plus 128</h3>
                     <a href="./contacto.html">CONTACTANOS</a>
                 </div>
-    
+
                 <div>
                     <img src="../img/a53.jfif" alt="a53">
                     <h3>Samsung Galaxy a53 128gb</h3>
@@ -101,13 +149,13 @@
                 <img src="../img/grid6.jpg" alt="funda">
             </div>
         </section>
-        
+
         <section class="galeriaSamsung">
             <h2>Unete a la potencia de la marca Coreana.</h2>
 
         </section>
     </main>
-            
+
     <footer>
         <img src="../img/rrlogo.png" alt="logo">
         <ul>
@@ -120,16 +168,25 @@
         <div class="redes">
             <h3>Nuestras Redes.</h3>
             <div>
-                <a href="https://www.instagram.com/" target="blank"><img src="../img/instagram.png" alt="logo instagram"></a>
-                <a href="https://es-la.facebook.com/" target="blank"><img src="../img/facebook.png" alt="logo facebook"></a>
+                <a href="https://www.instagram.com/" target="blank"><img src="../img/instagram.png"
+                        alt="logo instagram"></a>
+                <a href="https://es-la.facebook.com/" target="blank"><img src="../img/facebook.png"
+                        alt="logo facebook"></a>
                 <a href="https://twitter.com/" target="blank"><img src="../img/twitter.png" alt="logo twitter"></a>
             </div>
         </div>
-        
+
         <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6566.410168894439!2d-58.40623412424279!3d-34.6242573218166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb1d945c8459%3A0xccf24520f594eeef!2sSan%20Crist%C3%B3bal%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1672600014246!5m2!1ses-419!2sar" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6566.410168894439!2d-58.40623412424279!3d-34.6242573218166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb1d945c8459%3A0xccf24520f594eeef!2sSan%20Crist%C3%B3bal%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1672600014246!5m2!1ses-419!2sar"
+                width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>
