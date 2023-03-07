@@ -10,7 +10,7 @@
     background-attachment: fixed;
     @include flexbox (flex, center, center);
     flex-direction: column;
-    h2{
+    h1{
         font-style: italic;
         font-size: 80px;
         font-weight: 100px;
@@ -141,7 +141,7 @@
 }
 
 .articulos{
-    h2{
+    h1{
         color: $color-verde;
         text-align: center;
         font-size: 40px;
@@ -236,7 +236,7 @@
 }
 
 .bienvenidaApple{
-    h2{
+    h1{
         text-align: center;
         font-size: 40px;
         font-style: oblique;
@@ -444,7 +444,7 @@
 .tecnico{
     background-color: $color-fondos;
     color: white;
-    h2{
+    h1{
         text-align: center;
         font-size: 40px;
         font-style: oblique;
@@ -465,6 +465,7 @@
         flex-direction: column;
         margin: 20px;
         h2{
+            color: $color-verde;
             text-align: center;
             font-size: 40px;
             font-style: oblique;
@@ -484,6 +485,7 @@
         flex-direction: column;
         margin: 20px;
         h2{
+            color: $color-verde;
             text-align: center;
             font-size: 40px;
             font-style: oblique;
@@ -513,6 +515,7 @@
         flex-direction: column;
         margin: 20px;
         h2{
+            color: $color-verde;
             text-align: center;
             font-size: 40px;
             font-style: oblique;
@@ -536,6 +539,7 @@
         @include flexbox (flex, center, center);
         flex-direction: column;
         h2{
+            color: $color-verde;
             text-align: center;
             font-size: 40px;
             font-style: oblique;
@@ -556,7 +560,7 @@
         width: 30%;
         height: 40vh;
     }
-    h2{
+    h1{
         text-align: center;
         font-style: oblique;
         font-size: 40px;

@@ -61,7 +61,7 @@ header nav .container-fluid div form button {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
-  .hero h2 {
+  .hero h1 {
     font-style: italic;
     font-size: 80px;
     font-weight: 100px;
@@ -172,7 +172,7 @@ header nav .container-fluid div form button {
 .htmlSamsung {
   background-color: black; }
 
-.articulos h2 {
+.articulos h1 {
   color: #37dd37;
   text-align: center;
   font-size: 40px;
@@ -250,7 +250,7 @@ header nav .container-fluid div form button {
 .htmlIphone {
   background-color: black; }
 
-.bienvenidaApple h2 {
+.bienvenidaApple h1 {
   text-align: center;
   font-size: 40px;
   font-style: oblique;
@@ -421,7 +421,7 @@ header nav .container-fluid div form button {
 .tecnico {
   background-color: black;
   color: white; }
-  .tecnico h2 {
+  .tecnico h1 {
     text-align: center;
     font-size: 40px;
     font-style: oblique;
@@ -438,6 +438,7 @@ header nav .container-fluid div form button {
     flex-direction: column;
     margin: 20px; }
     .display div h2 {
+      color: #37dd37;
       text-align: center;
       font-size: 40px;
       font-style: oblique;
@@ -450,6 +451,7 @@ header nav .container-fluid div form button {
   flex-direction: column;
   margin: 20px; }
   .bandas div h2 {
+    color: #37dd37;
     text-align: center;
     font-size: 40px;
     font-style: oblique;
@@ -472,6 +474,7 @@ header nav .container-fluid div form button {
     flex-direction: column;
     margin: 20px; }
     .pin div h2 {
+      color: #37dd37;
       text-align: center;
       font-size: 40px;
       font-style: oblique;
@@ -492,6 +495,7 @@ header nav .container-fluid div form button {
   align-items: center;
   flex-direction: column; }
   .consultaServicio .cajaServicio h2 {
+    color: #37dd37;
     text-align: center;
     font-size: 40px;
     font-style: oblique;
@@ -509,7 +513,7 @@ header nav .container-fluid div form button {
   .portadaRegistro img {
     width: 30%;
     height: 40vh; }
-  .portadaRegistro h2 {
+  .portadaRegistro h1 {
     text-align: center;
     font-style: oblique;
     font-size: 40px;
@@ -665,7 +669,7 @@ footer {
     background-position: center;
     height: 60vh;
     width: 100%; }
-    .hero h2 {
+    .hero h1 {
       font-size: 60px; }
     .hero p {
       font-size: 30px;
@@ -716,7 +720,7 @@ footer {
     flex-direction: column-reverse; }
   .pin {
     flex-direction: column; }
-  .tecnico h2 {
+  .tecnico h1 {
     font-size: 30px; }
   .datos {
     flex-direction: column;
@@ -729,7 +733,7 @@ footer {
     height: 75vh; }
   .contacto .portadaRegistro {
     flex-direction: column; }
-    .contacto .portadaRegistro h2 {
+    .contacto .portadaRegistro h1 {
       font-size: 20px; }
   .contacto h2 {
     font-size: 20px; }
@@ -741,7 +745,7 @@ footer {
     background-image: url(../img/banderas.jpg);
     background-size: cover;
     background-position: center; }
-  .articulos h2 {
+  .articulos h1 {
     font-size: 30px; }
   .productosSamsung h2 {
     font-size: 30px; } }
@@ -761,12 +765,18 @@ footer {
     height: 70vh; }
   .productosSamsung .telefonosSam div {
     margin: 10px; }
+  .display div h2 {
+    font-size: 20px; }
   .display img {
     height: 350px;
     width: 350px; }
+  .bandas div h2 {
+    font-size: 20px; }
   .bandas img {
     height: 350px;
     width: 350px; }
+  .pin div h2 {
+    font-size: 20px; }
   .pin img {
     height: 350px;
     width: 350px; } }
@@ -778,7 +788,7 @@ footer {
     font-size: 30px; }
   .descripcion {
     height: 80vh; }
-  .bienvenidosApple h2 {
+  .bienvenidosApple h1 {
     font-size: 30px; }
   .tarjetasApple h2 {
     font-size: 30px; }
@@ -793,7 +803,7 @@ footer {
       font-size: 40px; } }
 
 @media screen and (max-width: 620px) {
-  .hero h2 {
+  .hero h1 {
     font-size: 40px; }
   .hero p {
     font-size: 20px; }
@@ -806,7 +816,7 @@ footer {
     font-size: 20px; }
   .marcas h2 {
     font-size: 20px; }
-  .tecnico h2 {
+  .tecnico h1 {
     font-size: 25px; }
   .bandas img {
     height: 300px;
@@ -832,7 +842,7 @@ footer {
     background-position: center;
     height: 40vh;
     width: 100%; }
-    .hero h2 {
+    .hero h1 {
       font-size: 40px; }
     .hero p {
       font-size: 20px; }
@@ -844,7 +854,7 @@ footer {
     margin: 10px; }
   .gridGaleria {
     grid-template-columns: repeat(1, 1fr); }
-  .bienvenidaApple h2 {
+  .bienvenidaApple h1 {
     font-size: 30px; }
   .grilla {
     grid-template-columns: repeat(1, 1fr); }
@@ -854,7 +864,7 @@ footer {
     font-size: 30px; }
   .cargadpres .cables div {
     margin: 10px; }
-  .tecnico h2 {
+  .tecnico h1 {
     font-size: 20px; }
   .display img {
     height: 300px;
@@ -894,7 +904,7 @@ footer {
     font-size: 20px; }
   .marcas h2 {
     font-size: 20px; }
-  .articulos h2 {
+  .articulos h1 {
     font-size: 20px; }
   .productosSamsung h2 {
     font-size: 20px; }
@@ -924,7 +934,7 @@ footer {
 @media screen and (max-width: 430px) {
   .descripcion {
     height: 100vh; }
-  .bienvenidaApple h2 {
+  .bienvenidaApple h1 {
     font-size: 20px; }
   .tarjetasApple h2 {
     font-size: 20px; } }

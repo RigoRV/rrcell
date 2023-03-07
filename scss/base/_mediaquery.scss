@@ -147,7 +147,7 @@
         background-position: center;
         height: 60vh;
         width: 100%;
-        h2{
+        h1{
             font-size: 60px;
         }
         p{
@@ -226,7 +226,7 @@
         flex-direction: column;
     }
     .tecnico{
-        h2{
+        h1{
             font-size: 30px; 
         }
     }
@@ -245,7 +245,7 @@
     .contacto{
         .portadaRegistro{
             flex-direction: column;
-            h2{
+            h1{
                 font-size: 20px;  
             }
         }
@@ -270,7 +270,7 @@
         }
     }
     .articulos{
-        h2{
+        h1{
             font-size: 30px;
         }
     }
@@ -306,18 +306,33 @@
         }
     }
     .display{
+        div{
+            h2{
+                font-size: 20px;
+            }
+        }
         img{
             height: 350px;
             width: 350px;
         }
     }
     .bandas{
+        div{
+            h2{
+                font-size: 20px;
+            }
+        }
         img{
             height: 350px;
             width: 350px;
         }
     }
     .pin{
+        div{
+            h2{
+                font-size: 20px;
+            }
+        }
         img{
             height: 350px;
             width: 350px;
@@ -341,7 +356,7 @@
         height: 80vh;
     }
     .bienvenidosApple{
-        h2{
+        h1{
             font-size: 30px;
         }
     }
@@ -366,7 +381,7 @@
 @media screen and (max-width:620px){
 
     .hero{
-        h2{
+        h1{
             font-size: 40px;
         }
         p{
@@ -391,7 +406,7 @@
         }
     }
     .tecnico{
-        h2{
+        h1{
             font-size: 25px;
         }
     }
@@ -401,6 +416,7 @@
             width: 350px;
         }
     }
+
     footer{
         font-size: 20px;
     }
@@ -427,7 +443,7 @@
         background-position: center;
         height: 40vh;
         width: 100%;
-        h2{
+        h1{
             font-size: 40px;
         }
         p{
@@ -453,7 +469,7 @@
         grid-template-columns: repeat(1,1fr);
     }
     .bienvenidaApple{
-        h2{
+        h1{
             font-size: 30px;
         }
     }
@@ -478,7 +494,7 @@
         }
     }
     .tecnico{
-        h2{
+        h1{
             font-size: 20px;
         }
     }
@@ -550,7 +566,7 @@
         }
     }
     .articulos{
-        h2{
+        h1{
             font-size: 20px;
         }
     }
@@ -606,7 +622,7 @@
         height: 100vh;
     }
     .bienvenidaApple{
-        h2{
+        h1{
             font-size: 20px;
         }
     }
